@@ -50,3 +50,7 @@ function App() {
 }
 
 export default App;
+
+// Store strategy:
+// 	* AccessToken - store in app state, don't put in localstorage or in a cookie that can be accessed by JavaScript
+// 	* RefreshToken - store in HTTP only secure cookie, that is not accessed by JavaScript but that can be sent back to that refresh endpoint and recognized to get a new access token
